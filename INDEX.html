@@ -3,118 +3,90 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>StyleSphere - Stylish Trends</title>
+    <title>fashion trends - Elegant Fashion</title>
     <link rel="stylesheet" href="style.css" />
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
   </head>
   <body>
-    <!-- Header / Navbar -->
-    <header>
+    <!-- Header Section -->
+    <header class="header">
+      <div class="logo">stylesphere</div>
       <nav>
-        <h1 class="logo">StyleSphere</h1>
-        <ul class="nav-links" id="nav-links">
+        <ul class="nav-links">
           <li><a href="#home">Home</a></li>
-          <li><a href="#shop">Shop</a></li>
+          <li><a href="#enquiry">Enquiry</a></li>
           <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <button  class="login-btn">Login</a>
 
-          <div class="login-container">
-            <h2>Login</h2>
-            <input type="text" placeholder="Username" />
-            <input type="password" placeholder="Password" />
-            <button>Login</button>
-          </div>
+          <button class="signup-btn">Sign up</button>
         </ul>
       </nav>
     </header>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-      <div class="hero-text">
-        <h1>Discover the Latest <span>Fashion Trends</span></h1>
+      <a href="fashion-trends.html" class="discover-btn">Discover Now</a>
+
+      <div class="hero-content">
+        <h1>Discover the Latest Fashion Trends</h1>
         <p>
-          Shop the best outfits from top brands. Elevate your style with
-          exclusive collections.
+          Discover the latest fashion trends that define style and elegance.
+          Stay ahead with modern designs, vibrant colors, and exclusive
+          collections that enhance your wardrobe. Whether you're looking for
+          casual wear, office attire, or party outfits, explore the trendiest
+          styles that make you stand out. Shop now and redefine your fashion
+          statement!".
         </p>
-        <a href="#shop" class="btn-shop">Shop Now</a>
       </div>
       <div class="hero-image">
         <img
-          src="https://img.freepik.com/free-vector/watercolor-spring-sale_23-2148850475.jpg?t=st=1743065149~exp=1743068749~hmac=fcbebc78cdb544448ff2f3305f68ba27b9c6e9f5a6efe8dc27432073d53ab1cc&w=826"
+        src="https://img.freepik.com/premium-vector/beauty-hand-drawn-clothing-store-logo-boutique_637057-235.jpg?ga=GA1.1.277748907.1741261012&semt=ais_hybrid&w=740"
           alt="Fashion Model"
         />
       </div>
     </section>
 
-    <!-- Shop Section -->
-    <section id="shop" class="shop">
-      <h2>Elevate Your Style with Our Dresses</h2>
-      <div class="product-container">
-        <div class="product-card">
-          <img
-            src="https://img.ltwebstatic.com/images3_pi/2024/11/22/b7/17322388639b7f958ebfe7be1439e33cc65bc29507_thumbnail_405x552.jpg"
-            alt="Product 1"
-          />
-          <h3>Elegant Dress</h3>
-          <p>$49.99</p>
-          <button class="btn-shop">Buy Now</button>
-        </div>
-        <div class="product-card">
-          <img
-            src="https://i1.wp.com/www.mrkoachman.com/wp-content/uploads/2022/10/THE-DIFFERENCE-BETWEEN-BLAZERS-AND-SPORTS-COATS_Image-e1667644205589.jpeg?fit=500,500&ssl=1"
-            alt="Product 2"
-          />
-          <h3>Casual Outfit</h3>
-          <p>$39.99</p>
-          <button class="btn-shop">Buy Now</button>
-        </div>
-        <div class="product-card">
-          <img
-            src="https://m.media-amazon.com/images/I/61kHnCqOzZL._AC_SL1300_.jpg"
-            alt="Product 3"
-          />
-          <h3>Classic Suit</h3>
-          <p>$89.99</p>
-          <button class="btn-shop">Buy Now</button>
-        </div>
-      </div>
+    <!-- Enquiry Form Section -->
+    <section id="enquiry" class="enquiry">
+      <h2>Enquiry Form</h2>
+      <form class="enquiry-form">
+        <input type="text" placeholder="Full Name" required />
+        <input type="email" placeholder="Email Address" required />
+        <input type="tel" placeholder="Phone Number" required />
+
+        <select required>
+          <option value="" disabled selected>Select Dress Size</option>
+          <option value="S">Small (S)</option>
+          <option value="M">Medium (M)</option>
+          <option value="L">Large (L)</option>
+          <option value="XL">Extra Large (XL)</option>
+        </select>
+
+        <select required>
+          <option value="" disabled selected>Select Category</option>
+          <option value="Casual">Casual</option>
+          <option value="Formal">Formal</option>
+          <option value="Party Wear">Party Wear</option>
+          <option value="Traditional">Traditional</option>
+        </select>
+
+        <input type="text" placeholder="Preferred Color (Optional)" />
+
+        <textarea placeholder="Additional Request or Message"></textarea>
+
+        <button type="submit" class="btn-enquiry">Submit Enquiry</button>
+      </form>
     </section>
 
     <!-- About Section -->
     <section id="about" class="about">
-      <h2>About StyleSphere</h2>
+      <h2>About stylesphere</h2>
       <p>
-        StyleSphere is your go-to destination for the latest and trendiest
-        fashion styles. We bring you a curated collection of premium outfits
-        from top brands, ensuring you stay ahead in the world of fashion. At
-        StyleSphere, we believe fashion is more than just clothing—its a way to
-        express yourself. Whether youre looking for elegant dresses, casual
-        outfits, or classic suits, we have something for every occasion.
+        StyleSphere is a modern fashion brand that brings you the latest trends,
+        stylish outfits, and timeless designs. Whether you're looking for casual
+        wear, office outfits, party dresses, or traditional attire, StyleSphere
+        has something for every fashion enthusiast.
       </p>
     </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-      <h2>Contact Us</h2>
-      <form>
-        <input type="text" placeholder="Your Name" required />
-        <input type="email" placeholder="Your Email" required />
-        <textarea placeholder="Your Message"></textarea>
-        <button class="btn-shop">Send Message</button>
       </form>
-    </section>
-
-    <!-- Login Modal -->
-    <div id="loginModal" class="modal">
-      <div class="modal-content">
-        <span class="close" onclick="closeModal()">&times;</span>
-        <h2>Login</h2>
-        <input type="text" placeholder="Username" />
-        <input type="password" placeholder="Password" />
-        <button class="btn-login-submit">Login</button>
-      </div>
-    </div>
-
-    <script src="script.js"></script>
   </body>
 </html>
