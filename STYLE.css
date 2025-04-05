@@ -1,235 +1,97 @@
-/* General Styling */
+/* CSS (style.css) */
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #ff5e57;
+  font-family: "Poppins", sans-serif;
+  margin: 0px;
+  padding: 0px;
+  background: #fff;
 }
 
-/* Header */
-.header {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  padding: 15px 50px;
-  background: black;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-.logo {
-  display: flex;
-  color: #007bff;
-  font-size: 50px;
-}
-
-/* Navigation Bar */
-.navbar {
+nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: black;
-  padding: 15px 20px;
+  padding: 20px 50px;
+  background: white;
 }
 
-/* Navigation Links */
 .nav-links {
+  list-style: none;
   display: flex;
-  align-items: center;
   gap: 20px;
 }
 
-.nav-links a {
-  color: orangered;
+.nav-links li a {
   text-decoration: none;
-  font-size: 16px;
-  font-weight: bold;
+  color: #333;
+  font-weight: 400;
 }
 
-/* Login & Signup Button Container */
-.auth-buttons {
+.nav-buttons {
   display: flex;
-  gap: 10px;
+  align-items: center;
+  gap: 15px;
 }
 
-/* Login & Signup Buttons */
-.login-btn,
-.signup-btn {
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  font-size: 16px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.login-btn {
-  background-color: #ff5722;
-  color: white;
-}
-
-.signup-btn {
-  background-color: #ff5722;
-  color: white;
-}
-
-.login-btn:hover,
-.signup-btn:hover {
-  background-color: #e64a19;
-}
-
-/* Responsive Fix */
-@media (max-width: 768px) {
-  .nav-links {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .auth-buttons {
-    flex-direction: column;
-    gap: 5px;
-  }
-
-  .login-btn,
-  .signup-btn {
-    width: 100%;
-    text-align: center;
-  }
-}
-
-/* Hero Section */
-.discover-btn {
-  display: inline-block;
-  padding: 12px 24px;
-  background-color: orangered;
-  color: white;
+.login {
+  color: #ff7f50;
   text-decoration: none;
-  font-weight: bold;
-  border-radius: 8px;
-  text-align: center;
-}
-
-/* Responsive: Full width on small screens */
-@media (max-width: 600px) {
-  .discover-btn {
-    display: block;
-    width: 100%;
-    text-align: center;
-    padding: 15px;
-    font-size: 18px;
-  }
+  font-weight: 600;
 }
 
 .hero {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 50px;
+  padding: 80px 50px;
   background: white;
-}
-
-.hero-content {
-  max-width: 500px;
 }
 
 .hero-content h1 {
-  font-size: 36px;
+  font-size: 3rem;
   color: #333;
 }
-.hero-image {
-  width: 50%;
-  height: 50%;
-  align-items: center;
+
+.hero-content span {
+  color: #ff7f50;
+  font-weight: bold;
 }
-/* Enquiry Section Styling */
-.enquiry {
+.hero-image img {
+  max-width: 1000px;
+  height: 180px;
+}
+
+.btn {
+  background: #ff7f50;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.search-box {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
   background: white;
-  padding: 50px 20px;
-  text-align: center;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 30px 50px;
+  border-radius: 10px;
 }
 
-.enquiry h2 {
-  font-size: 28px;
-  color: #333;
-  margin-bottom: 20px;
-}
-
-/* Form Styling */
-.enquiry-form {
-  max-width: 500px;
-  margin: 0 auto;
+.search-item {
   display: flex;
   flex-direction: column;
-  gap: 15px;
 }
 
-.enquiry-form input,
-.enquiry-form select,
-.enquiry-form textarea {
-  width: 100%;
-  padding: 12px;
-  font-size: 16px;
-  border: 1px solid #ccc;
+.search-item label {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+select {
+  padding: 10px;
   border-radius: 5px;
-  outline: none;
-  transition: border 0.3s;
-}
-
-.enquiry-form input:focus,
-.enquiry-form select:focus,
-.enquiry-form textarea:focus {
-  border-color: #ff4081;
-}
-
-/* Textarea Styling */
-.enquiry-form textarea {
-  height: 100px;
-  resize: none;
-}
-
-/* Submit Button */
-.btn-enquiry {
-  background: orangered;
-  color: white;
-  font-size: 18px;
-  padding: 12px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-/* Responsive Design */
-@media (max-width: 600px) {
-  .enquiry-form {
-    width: 100%;
-  }
-
-  .btn-enquiry {
-    font-size: 16px;
-    padding: 14px;
-  }
-}
-
-/* About Section */
-.about {
-  text-align: center;
-  padding: 50px;
-  background: white;
-}
-
-.about h2 {
-  font-size: 50px;
-  color: #333;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .hero {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .hero-content {
-    margin-bottom: 20px;
-  }
+  border: 1px solid #ddd;
 }

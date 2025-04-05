@@ -3,90 +3,81 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>fashion trends - Elegant Fashion</title>
+    <title>stylesphere - Landing Page</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <!-- Header Section -->
-    <header class="header">
-      <div class="logo">stylesphere</div>
+    <header>
       <nav>
+        <div class="logo">stylesphere</div>
         <ul class="nav-links">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#enquiry">Enquiry</a></li>
-          <li><a href="#about">About</a></li>
-          <button  class="login-btn">Login</a>
-
-          <button class="signup-btn">Sign up</button>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Shop</a></li>
+          <li><a href="#">Collections</a></li>
+          <li><a href="#">Trends</a></li>
+          <li><a href="#">Blog</a></li>
         </ul>
+        <div class="nav-buttons">
+          <a href="#" class="login">Login</a>
+          <button class="btn signup">Sign Up</button>
+        </div>
       </nav>
     </header>
-
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-      <a href="fashion-trends.html" class="discover-btn">Discover Now</a>
-
+    <section class="hero">
       <div class="hero-content">
-        <h1>Discover the Latest Fashion Trends</h1>
+        <h1>Discover the latest <span>fashion trends</span> with us.</h1>
         <p>
-          Discover the latest fashion trends that define style and elegance.
-          Stay ahead with modern designs, vibrant colors, and exclusive
-          collections that enhance your wardrobe. Whether you're looking for
-          casual wear, office attire, or party outfits, explore the trendiest
-          styles that make you stand out. Shop now and redefine your fashion
-          statement!".
+          Explore our curated collections and find the perfect outfit for any
+          occasion.
         </p>
+        <button class="btn discover">Shop Now</button>
       </div>
       <div class="hero-image">
         <img
-        src="https://img.freepik.com/premium-vector/beauty-hand-drawn-clothing-store-logo-boutique_637057-235.jpg?ga=GA1.1.277748907.1741261012&semt=ais_hybrid&w=740"
+          src="https://img.freepik.com/free-vector/fashion-template-design_23-2150368863.jpg"
           alt="Fashion Model"
         />
+        <div class="badge best-tour">🏆 Best fashion Awards</div>
+        <div class="badge reviews">⭐ 42K Customer Reviews</div>
       </div>
     </section>
-
-    <!-- Enquiry Form Section -->
-    <section id="enquiry" class="enquiry">
-      <h2>Enquiry Form</h2>
-      <form class="enquiry-form">
-        <input type="text" placeholder="Full Name" required />
-        <input type="email" placeholder="Email Address" required />
-        <input type="tel" placeholder="Phone Number" required />
-
-        <select required>
-          <option value="" disabled selected>Select Dress Size</option>
-          <option value="S">Small (S)</option>
-          <option value="M">Medium (M)</option>
-          <option value="L">Large (L)</option>
-          <option value="XL">Extra Large (XL)</option>
+    <section class="search-box">
+      <div class="search-item">
+        <label>Category</label>
+        <select>
+          <option>Select Category</option>
+          <option>Men's Clothing</option>
+          <option>Women's Clothing</option>
+          <option>Accessories</option>
+          <option>Footwear</option>
         </select>
-
-        <select required>
-          <option value="" disabled selected>Select Category</option>
-          <option value="Casual">Casual</option>
-          <option value="Formal">Formal</option>
-          <option value="Party Wear">Party Wear</option>
-          <option value="Traditional">Traditional</option>
+      </div>
+      <div class="search-item">
+        <label>Style</label>
+        <select>
+          <option>Select Style</option>
+          <option>Casual</option>
+          <option>Formal</option>
+          <option>Streetwear</option>
+          <option>Vintage</option>
         </select>
-
-        <input type="text" placeholder="Preferred Color (Optional)" />
-
-        <textarea placeholder="Additional Request or Message"></textarea>
-
-        <button type="submit" class="btn-enquiry">Submit Enquiry</button>
-      </form>
+      </div>
+      <div class="search-item">
+        <label>Size</label>
+        <select>
+          <option>Select Size</option>
+          <option>XS</option>
+          <option>S</option>
+          <option>M</option>
+          <option>L</option>
+          <option>XL</option>
+        </select>
+      </div>
+      <button class="btn explore">Explore Now</button>
     </section>
-
-    <!-- About Section -->
-    <section id="about" class="about">
-      <h2>About stylesphere</h2>
-      <p>
-        StyleSphere is a modern fashion brand that brings you the latest trends,
-        stylish outfits, and timeless designs. Whether you're looking for casual
-        wear, office outfits, party dresses, or traditional attire, StyleSphere
-        has something for every fashion enthusiast.
-      </p>
-    </section>
-      </form>
   </body>
 </html>
